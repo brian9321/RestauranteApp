@@ -1,0 +1,33 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-back-button icon="chevron-back" defaultHref="/"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/adduser">Contactanos!</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Login</h1>
+    <img src="assets/logodx.png" />
+  </div>
+
+  <form id="form" #form="ngForm" (ngSubmit)="loginuser()">
+    <ion-item class="ion-margin-bottom">
+      <ion-icon  slot="start" color="success" name="mail-outline"></ion-icon>
+      <ion-input name="email" id="email" placeholder="Correo" type="Email" [(ngModel)]="UserLogin.email" required></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon  slot="start" color="success" name="keypad-outline"></ion-icon>
+      <ion-input name="password" id="password"  placeholder="Contraseña" type="password" [(ngModel)]="UserLogin.password" required></ion-input>
+    </ion-item>
+
+    <ion-button color="success" expand="block" shape="round" type="submit" [disabled]="form.invalid">Login</ion-button>
+  </form>
+</ion-content>

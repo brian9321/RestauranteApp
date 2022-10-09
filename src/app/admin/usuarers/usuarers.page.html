@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-avatar slot="end" (click)="RouterAddUser()">
+      <img src="https://image.flaticon.com/icons/png/512/306/306232.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>Usuarios</h2>
+      <p>Listado de usuario</p>
+    </ion-label>
+  </ion-item>
+  <ion-searchbar></ion-searchbar>
+</ion-header>
+
+<ion-content class="ion-padding wrapper">
+ <ion-list class="bg-transparent">
+  <ion-item lines="none" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+    <ion-avatar slot="start">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/User_Circle.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>ADMINISTRADOR</h2>
+      <h3>BRIAN ABOYTES MORALES</h3>
+      <p>1234567890</p>
+      <p>1234567890</p>
+      <p>brayan932@gmail.com</p>
+      <p>2021-03-19 13:16:28</p>
+    </ion-label>
+  </ion-item>
+ </ion-list>
+</ion-content>

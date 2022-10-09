@@ -1,0 +1,7 @@
+{
+  "name": "rest-menu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

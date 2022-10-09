@@ -1,0 +1,55 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-back-button icon="chevron-back" defaultHref="/"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary">Nuevo Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br>
+  <div id="header">
+    <img src="assets/addimage.png" />
+  </div>
+
+  <form id="form">
+    <ion-item class="ion-margin-bottom">
+      <ion-icon color="primary" slot="start" name="person-circle-outline"></ion-icon>
+      <ion-input id="idrol" placeholder="ROL" type="Text" required></ion-input>
+    </ion-item>
+    
+    <ion-item class="ion-margin-bottom">
+      <ion-icon color="primary" slot="start" name="person-circle-outline"></ion-icon>
+      <ion-input id="Nombres" placeholder="Nombres" type="Text" required></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon color="primary" slot="start" name="person-circle-outline"></ion-icon>
+      <ion-input id="Apellidos" placeholder="Apellidos" type="Text" required></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon color="secondary" slot="start" name="call-outline"></ion-icon>
+      <ion-input id="telefono" placeholder="Telefono" type="Text"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon color="secondary" slot="start" name="phone-portrait-outline"></ion-icon>
+      <ion-input id="celular" placeholder="Celular" type="Text"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon  slot="start" color="success" name="mail-outline"></ion-icon>
+      <ion-input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Correo" type="Email" required></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-icon  slot="start" color="success" name="keypad-outline"></ion-icon>
+      <ion-input placeholder="Contraseña" type="password" required></ion-input>
+    </ion-item>
+    <ion-button color="success" expand="block" shape="round">Registrar</ion-button>
+  </form>
+</ion-content>

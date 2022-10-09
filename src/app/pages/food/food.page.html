@@ -1,0 +1,17 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="localService.platillos">
+    <ion-item *ngFor="let platillos of localService.platillos">
+      <ion-label>
+        {{platillos.nombreplatillo}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

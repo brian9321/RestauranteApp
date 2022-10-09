@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-avatar slot="end" >
+      <img src="https://cdn3.iconfinder.com/data/icons/map-pins-v-2/512/map_pin_add_address_location_route_plus-512.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>Ciudades</h2>
+      <p>Listado de ciudades</p>
+    </ion-label>
+  </ion-item>
+  <ion-searchbar></ion-searchbar>
+</ion-header>
+
+<ion-content class="ion-padding wrapper">
+ <ion-list class="bg-transparent">
+  <ion-item lines="none" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+    <ion-avatar slot="start">
+      <img src="https://i.pinimg.com/originals/7f/6c/dc/7f6cdce4c15b2d1548b618ce5573bfd3.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>Nombre pais</h2>
+      <h3>ID</h3>
+    </ion-label>
+  </ion-item>
+ </ion-list>
+</ion-content>

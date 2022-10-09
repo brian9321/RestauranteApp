@@ -1,0 +1,29 @@
+ion-content {
+    --background: #f7fafc;
+    ion-card {
+      margin: 20px auto;
+      box-shadow: none;
+      border-radius: 12px;
+      width: 80%;
+      box-shadow: 0px 3px 45px 0px rgba(0, 0, 0, 0.10);
+      ion-card-title, .price {
+        font-weight: 700;
+        color: #222;
+      }
+    }
+  }
+
+  ion-icon {
+    color: #f2994a;
+    padding-right: 4px;
+  }
+
+  .item.item-trns {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white; 
+    margin: 0%;
+  }
+  .bg-transparent {
+    background: transparent;
+  }
